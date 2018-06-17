@@ -22,6 +22,7 @@ Pod::Spec.new do |s|
                             DESC
   s.license               = "BABU"
   s.author                = { 'babu' => 'gbabucs@gmail.com' }
+s.source                = { :git => 'https://github.com/gbabucs/ReusableFramework.git', :tag => s.version }
   s.platform              = :ios, "11.0"
   s.source_files          = 'ReusableFramework/**/*.{swift}'
   s.resources             = ['ReusableFramework/*.{storyboard,xib,json,html,jpg}', 'ReusableFramework/Asset.xcassets']
