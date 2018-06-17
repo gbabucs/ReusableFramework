@@ -21,6 +21,7 @@ Pod::Spec.new do |s|
   s.description           = <<-DESC
                             ReusableFramework pod for use swift projects
                             DESC
+  s.homepage              = 'https://github.com/gbabucs/ReusableFramework'
   s.license               = "BABU"
   s.author                = { 'babu' => 'gbabucs@gmail.com' }
   s.source                = { :git => 'https://github.com/gbabucs/ReusableFramework.git', :tag => s.version }
