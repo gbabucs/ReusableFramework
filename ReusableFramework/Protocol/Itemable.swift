@@ -8,4 +8,4 @@
 
 import Foundation
 
-protocol Itemable: CustomStringConvertible {}
+public protocol Itemable: CustomStringConvertible {}

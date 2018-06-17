@@ -8,12 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		E7D3B46F20D71A8B006F9723 /* ReusableFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = E7D3B46D20D71A8B006F9723 /* ReusableFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7D3B47620D71AC5006F9723 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D3B47520D71AC5006F9723 /* UIViewControllerExtension.swift */; };
+		E7D3B47C20D71AFB006F9723 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D3B47720D71AFB006F9723 /* DataSource.swift */; };
+		E7D3B47D20D71AFB006F9723 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D3B47820D71AFB006F9723 /* Cell.swift */; };
+		E7D3B47E20D71AFB006F9723 /* Sectionable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D3B47920D71AFB006F9723 /* Sectionable.swift */; };
+		E7D3B47F20D71AFB006F9723 /* Itemable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D3B47A20D71AFB006F9723 /* Itemable.swift */; };
+		E7D3B48020D71AFB006F9723 /* DataSourceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D3B47B20D71AFB006F9723 /* DataSourceError.swift */; };
+		E7D3B48520D71C3B006F9723 /* ReusableFramework.podspec in Resources */ = {isa = PBXBuildFile; fileRef = E7D3B48420D71C3A006F9723 /* ReusableFramework.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E7D3B46A20D71A8B006F9723 /* ReusableFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReusableFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7D3B46D20D71A8B006F9723 /* ReusableFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReusableFramework.h; sourceTree = "<group>"; };
 		E7D3B46E20D71A8B006F9723 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7D3B47520D71AC5006F9723 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		E7D3B47720D71AFB006F9723 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		E7D3B47820D71AFB006F9723 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		E7D3B47920D71AFB006F9723 /* Sectionable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sectionable.swift; sourceTree = "<group>"; };
+		E7D3B47A20D71AFB006F9723 /* Itemable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Itemable.swift; sourceTree = "<group>"; };
+		E7D3B47B20D71AFB006F9723 /* DataSourceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSourceError.swift; sourceTree = "<group>"; };
+		E7D3B48420D71C3A006F9723 /* ReusableFramework.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ReusableFramework.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +44,7 @@
 		E7D3B46020D71A8B006F9723 = {
 			isa = PBXGroup;
 			children = (
+				E7D3B48420D71C3A006F9723 /* ReusableFramework.podspec */,
 				E7D3B46C20D71A8B006F9723 /* ReusableFramework */,
 				E7D3B46B20D71A8B006F9723 /* Products */,
 			);
@@ -46,10 +61,32 @@
 		E7D3B46C20D71A8B006F9723 /* ReusableFramework */ = {
 			isa = PBXGroup;
 			children = (
+				E7D3B48320D71B2C006F9723 /* Extension */,
+				E7D3B48120D71AFF006F9723 /* Protocol */,
 				E7D3B46D20D71A8B006F9723 /* ReusableFramework.h */,
 				E7D3B46E20D71A8B006F9723 /* Info.plist */,
 			);
 			path = ReusableFramework;
+			sourceTree = "<group>";
+		};
+		E7D3B48120D71AFF006F9723 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				E7D3B47820D71AFB006F9723 /* Cell.swift */,
+				E7D3B47720D71AFB006F9723 /* DataSource.swift */,
+				E7D3B47B20D71AFB006F9723 /* DataSourceError.swift */,
+				E7D3B47A20D71AFB006F9723 /* Itemable.swift */,
+				E7D3B47920D71AFB006F9723 /* Sectionable.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		E7D3B48320D71B2C006F9723 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E7D3B47520D71AC5006F9723 /* UIViewControllerExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +132,7 @@
 				TargetAttributes = {
 					E7D3B46920D71A8B006F9723 = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -120,6 +158,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7D3B48520D71C3B006F9723 /* ReusableFramework.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7D3B47C20D71AFB006F9723 /* DataSource.swift in Sources */,
+				E7D3B48020D71AFB006F9723 /* DataSourceError.swift in Sources */,
+				E7D3B47E20D71AFB006F9723 /* Sectionable.swift in Sources */,
+				E7D3B47F20D71AFB006F9723 /* Itemable.swift in Sources */,
+				E7D3B47620D71AC5006F9723 /* UIViewControllerExtension.swift in Sources */,
+				E7D3B47D20D71AFB006F9723 /* Cell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +304,7 @@
 		E7D3B47320D71A8B006F9723 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -276,6 +322,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.test.ReusableFramework;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +331,7 @@
 		E7D3B47420D71A8B006F9723 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

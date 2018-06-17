@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol DataSource: class {
+public protocol DataSource: class {
 
     associatedtype SourceData
     associatedtype Section: Sectionable
@@ -45,7 +45,7 @@ protocol DataSource: class {
     
 }
 
-extension DataSource {
+public extension DataSource {
     
     // MARK: Properties
     

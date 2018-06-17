@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-extension UIViewController {
+public extension UIViewController {
     
-    var isModal: Bool {
+    public var isModal: Bool {
         return presentingViewController != nil ||
             navigationController?.presentingViewController?.presentedViewController === navigationController ||
             tabBarController?.presentingViewController is UITabBarController

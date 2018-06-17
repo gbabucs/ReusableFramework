@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Sectionable: CustomStringConvertible, Hashable {
+public protocol Sectionable: CustomStringConvertible, Hashable {
     
     // MARK: Properties
     
@@ -19,15 +19,15 @@ protocol Sectionable: CustomStringConvertible, Hashable {
 
 // MARK: - Hashable
 
-extension Sectionable {
+public extension Sectionable {
     
     // MARK: Properties
     
-    var hashValue: Int {
+    public var hashValue: Int {
         return id.hashValue
     }
     
-    var index: Int {
+    public var index: Int {
         return 0
     }
     
@@ -35,6 +35,6 @@ extension Sectionable {
 
 // MARK: - Equatable
 
-func == <S: Sectionable> (lhs: S, rhs: S) -> Bool {
+public func == <S: Sectionable> (lhs: S, rhs: S) -> Bool {
     return  lhs.index == rhs.index && lhs.id == rhs.id
 }

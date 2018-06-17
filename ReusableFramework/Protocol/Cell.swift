@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Cell {
+public protocol Cell {
     
     associatedtype DataType
     
@@ -21,7 +21,7 @@ protocol Cell {
 
 //MARK: Cell Extension
 
-extension Cell {
+public extension Cell {
     
     static var reuseIdentifier: String {
         return String(describing: self)

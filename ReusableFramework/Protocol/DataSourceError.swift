@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum DataSourceError: Error {
+public enum DataSourceError: Error {
     case sectionsEmpty
     case sectionNotRequired
     case sectionIndexOutOfBounds
